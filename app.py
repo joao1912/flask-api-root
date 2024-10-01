@@ -11,7 +11,7 @@ def health():
         'status': 'ok'
     })
 
-@app.route('/record', method=['POST'])
+@app.route('/record', methods=['POST'])
 def record():
 
     bucketName = os.getenv('BUCKET')
